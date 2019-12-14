@@ -81,6 +81,9 @@ nav a:hover {
     padding: 50px 20px 40px 20px;
     background-color: #de7d29;
 }
+.top {
+    text-align: center;
+}
 .skillsimg {
     background-image: url('../images/logos.png');
     background-size: contain;
