@@ -8,6 +8,11 @@ body {
     margin: 0px;
 }
 
+.bold {
+    font-weight: 700;
+    padding-bottom: 2px;
+    border-bottom: 1px solid white;
+}
 
 nav {
     width: 100%;
@@ -25,17 +30,18 @@ nav ul {
     list-style: none;
 }
 nav a {
-    display: block;
+    display: flex;
     margin: 12px;
     padding: 4px;
     text-decoration: none;
     color: rgb(136, 136, 136);
-    transition: transform 2s;
-    animation: fade-down 1s 1 ease-in-out;
+    transition: transform 1s;
+    animation: fade-down 1.5s 1 ease-in-out;
 }
 nav a:hover {
     transform: scale(1.2);
-    color: white;
+    color: #de7d29;
+    border-bottom: 2px solid white;
 }
 
 
@@ -48,39 +54,78 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     padding-top: 12%;
-    height: fit-content;
+    padding-bottom: 12%;
+    background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2014&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
-#profile img {
+#prfimg {
     align-self: center;
     border: 5px solid white;
     border-radius: 100%;
     width: 25%;
 }
+#profile div {
+    margin: 0 auto;
+    width: fit-content;
+}
 #profile p {
     position: relative;
-    top: -30px;
-}
-.background {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    max-width: 100%;
-
-
+    top: -20px;
 }
 
 
-#about {
-    padding-top: 50px;
+
+#about .top {
+    padding: 50px 20px 40px 20px;
+    background-color: #de7d29;
+}
+.skillsimg {
+    background-image: url('../images/logos.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:  0;
+    width: 100%;
+    transition: 2s;
+    padding-top: 40%;
+}
+.skillsimg:hover {
+    background-image: url('../images/logosHOVER.png');
 }
 
 
 #projects {
-    padding-top: 50px;
+    padding: 100px 20px 100px 20px;
+    background-color: rgb(58, 144, 218);
 }
 
 
-
+@media(max-width: 500px) {
+    #profile {
+        padding-top: 10%;
+        font-size: 15px;
+        background-position-x: -10px;
+    }
+    #prfimg {
+        width: 200px;
+    }
+    #about .top {
+        padding-top: 10px;
+    }
+    nav {
+        padding-top: 5px;
+        font-size: 12px;
+        top: 93%;
+    }
+    nav ul {
+        margin-right: 10%;
+    }
+    nav a {
+        font-size: 15px;
+        padding: 0px;
+    }
+}
 
 
 @keyframes fade-in {
@@ -89,19 +134,5 @@ nav a:hover {
 }
 
 @keyframes fade-down {
-    0% {transform: translate(0px, 50px); color: black;}
-}
-
-@media(max-width: 500px) {
-    #profile {
-        padding-top: 10%;
-        font-size: 15px;
-    }
-    nav {
-        font-size: 12px;
-        top: 94%;
-    }
-    nav a {
-        padding: 0px;
-    }
+    0% {transform: translate(0px, 40px); color: black;}
 }
