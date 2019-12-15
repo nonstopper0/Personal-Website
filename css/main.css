@@ -130,6 +130,20 @@ nav a:hover {
     }
 }
 
+@media(min-width: 2000px) {
+    #prfimg {
+        width: 300px;
+    }
+    nav {
+        font-size: 28px;
+        height: 60px;
+        padding-top: 6px;
+    }
+    main {
+        font-size: 150%;
+    }
+}
+
 
 @keyframes fade-in {
     0% {opacity: 0;}
