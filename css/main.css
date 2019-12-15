@@ -1,3 +1,7 @@
+/* * {
+    border: 1px solid red;
+} */
+
 html {
     scroll-behavior: smooth;
 }
@@ -88,10 +92,12 @@ nav a:hover {
     background-image: url('../images/logos.png');
     background-size: contain;
     background-repeat: no-repeat;
+    position: relative;
     height:  0;
     width: 100%;
-    transition: 2s;
     padding-top: 40%;
+    transition: 2s;
+    left: 1.5%;
 }
 .skillsimg:hover {
     background-image: url('../images/logosHOVER.png');
@@ -101,6 +107,27 @@ nav a:hover {
 #projects {
     padding: 100px 20px 100px 20px;
     background-color: rgb(58, 144, 218);
+}
+.projectscontainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#javaracercontainer {
+    padding: 10%;
+    text-align: center;
+}
+#javaracer {
+    background-image: url('../images/javaracer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    border: 3px solid white;
+    opacity: .8;
+}
+#javaracer:hover {
+    opacity: 1;
 }
 
 
@@ -115,6 +142,9 @@ nav a:hover {
     }
     #about .top {
         padding-top: 10px;
+    }
+    .skillsimg {
+        left: 0%;
     }
     nav {
         padding-top: 5px;
@@ -140,7 +170,7 @@ nav a:hover {
         padding-top: 6px;
     }
     main {
-        font-size: 150%;
+        font-size: 120%;
     }
 }
 
