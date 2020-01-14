@@ -68,7 +68,7 @@ nav a:hover {
     align-self: center;
     border: 5px solid white;
     border-radius: 100%;
-    width: 25%;
+    width: 18%;
 }
 #profile div {
     margin: 0 auto;
@@ -85,6 +85,10 @@ nav a:hover {
     padding: 50px 20px 40px 20px;
     background-color: #de7d29;
 }
+#about {
+    height: fit-content;
+    max-height: 700px;
+}
 .top {
     text-align: center;
 }
@@ -93,46 +97,67 @@ nav a:hover {
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
-    height:  0;
+    height:  fit-content;
     width: 100%;
+    max-width: 1000px;
     padding-top: 40%;
     transition: 2s;
-    left: 1.5%;
+    left: -5px;
+    margin: 0 auto;
 }
 .skillsimg:hover {
     background-image: url('../images/logosHOVER.png');
 }
 
 
-#projects {
-}
 .projectscontainer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
 }
 #projects .top {
     margin: 0 auto;
-    max-width: 900px;
     padding: 70px 20px 70px 20px;
     background-color: rgb(58, 144, 218);
 }
-#javaracercontainer {
-    padding: 5%;
+#projectcontainer {
+    padding: 10px;
+    padding-top: 60px;
     text-align: center;
 }
 #javaracer {
-    background-image: url('../images/javaracer.png');
+    background-image: url('../images/java.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 300px;
     height: 300px;
     border: 5px solid white;
     opacity: .9;
-    margin: 0 auto;
 }
 #javaracer:hover {
     opacity: 1;
+}
+#javaracer p {
+    opacity: 0;
+}
+#projectcontainer p {
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    font-size: 14px;
+    width: 300px;
+}
+
+#InstantGrammer {
+    background-image: url('../images/instant.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    border: 5px solid white;
+    opacity: .9;
 }
 
 
@@ -170,12 +195,12 @@ nav a:hover {
         width: 300px;
     }
     nav {
-        font-size: 28px;
+        font-size: 20px;
         height: 60px;
         padding-top: 6px;
     }
     main {
-        font-size: 120%;
+        font-size: 110%:
     }
 }
 
