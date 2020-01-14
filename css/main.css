@@ -105,16 +105,20 @@ nav a:hover {
 
 
 #projects {
-    padding: 100px 20px 100px 20px;
-    background-color: rgb(58, 144, 218);
 }
 .projectscontainer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+#projects .top {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 70px 20px 70px 20px;
+    background-color: rgb(58, 144, 218);
+}
 #javaracercontainer {
-    padding: 10%;
+    padding: 5%;
     text-align: center;
 }
 #javaracer {
@@ -123,8 +127,9 @@ nav a:hover {
     background-repeat: no-repeat;
     width: 300px;
     height: 300px;
-    border: 3px solid white;
-    opacity: .8;
+    border: 5px solid white;
+    opacity: .9;
+    margin: 0 auto;
 }
 #javaracer:hover {
     opacity: 1;
