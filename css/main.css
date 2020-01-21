@@ -32,6 +32,7 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
+    z-index: 11;
 }
 nav a {
     display: flex;
@@ -108,7 +109,7 @@ nav a:hover {
     max-width: 1000px;
     padding-top: 40%;
     margin: 0 auto;
-    z-index: 10;
+    z-index: 1;
 }
 .skillsimg:hover {
     transition: 1s ease;
@@ -173,23 +174,44 @@ nav a:hover {
 }
 
 #contact {
-    color: rgba(255, 255, 255, 0.482);
+    color: rgb(255, 255, 255);
     margin: 0 auto;
     margin-top: 30px;
     padding: 50px 20px 50px 20px;
-    background-color: #151515;
+    background-color: #de7d29;
+    height: 200px;
+}
+#contactcontainer {
+    margin: 0 auto;
+    justify-content: space-around;
+    max-width: 1000px;
+    text-align: center;
+    align-items: baseline;
+}
+#button {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 0px 5px 0px 5px;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
 }
 #contact a {
-    color: rgba(255, 255, 255, 0.509);
+    color: rgb(255, 255, 255);
     display: inline-block;
     margin: 0px;
-    text-decoration: none;
+    text-decoration: none; 
 }
 #contact a h4 {
     padding: 0px;
     margin: 5px;
     padding: 2px;
-    border-bottom: 1px solid grey;
+}
+#hide {
+    opacity: 0;
+}
+#contact:hover ~ #hide {
+    transition: 1s ease;
+    opacity: 1;
 }
 
 
