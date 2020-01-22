@@ -72,9 +72,10 @@ nav a:hover {
     border: 5px solid white;
     border-radius: 100%;
     width: 18%;
+    transition: 1s ease;
 }
 #prfimg:hover {
-    transition: 3s ease;
+    transition: 1s ease;
     transform: scale(1.1);
 }
 #profile div {
@@ -91,6 +92,7 @@ nav a:hover {
 #about .top {
     padding: 50px 20px 40px 20px;
     background-color: #de7d29;
+    overflow: hidden;
 }
 #about {
     height: fit-content;
@@ -180,8 +182,8 @@ nav a:hover {
     margin: 0 auto;
     margin-top: 30px;
     padding: 50px 20px 50px 20px;
-    background-color: #de7d29;
-    height: 200px;
+    background-color: #151515;
+    height: 245px;
 }
 #contactcontainer {
     margin: 0 auto;
@@ -193,7 +195,7 @@ nav a:hover {
 #button {
     margin: 0 auto;
     width: fit-content;
-    padding: 0px 5px 0px 5px;
+    padding: 0px 10px 0px 10px;
     border-right: 2px solid white;
     border-left: 2px solid white;
 }
@@ -207,15 +209,11 @@ nav a:hover {
     padding: 0px;
     margin: 5px;
     padding: 2px;
+    border-bottom: 1px solid white;
 }
 #hide {
-    opacity: 0;
+    margin-top: 30px;
 }
-#contact:hover ~ #hide {
-    transition: 1s ease;
-    opacity: 1;
-}
-
 
 @media(max-width: 500px) {
     #profile {
@@ -249,8 +247,17 @@ nav a:hover {
         color: white;
         border-bottom: 2px solid white;
     }
-    #projectcontainer p {
+    .projectcontainer p {
         opacity: 1;
+    }
+    .top {
+        text-align: left;
+    }
+    .top p{
+        margin: 0 auto;
+        padding: 15px;
+        width: fit-content;
+        border-left: 2px solid white;
     }
 }
 
