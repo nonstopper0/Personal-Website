@@ -10,6 +10,7 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    
 }
 
 .bold {
@@ -41,14 +42,13 @@ nav a {
     margin: 12px;
     padding: 4px;
     text-decoration: none;
-    color: rgb(216, 216, 216);
+    color: #e1e1e1;
     transition: transform 1s;
     animation: fade-down 1.5s 1 ease-in-out;
 }
 nav a:hover {
     transform: scale(1.09);
-    color: #de7d29;
-    border-bottom: 1px solid white;
+    color: rgb(89,180,228);
 }
 
 
@@ -62,16 +62,15 @@ nav a:hover {
     text-align: center;
     padding-top: 12%;
     padding-bottom: 12%;
-    background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2014&q=80');
+    background-image: url('https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80');
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 #prfimg {
     align-self: center;
-    border: 2px solid white;
-    border-radius: 100%;
     width: 18%;
+    border-radius: 100%;
     transition: 1s ease;
 }
 #prfimg:hover {
@@ -84,14 +83,14 @@ nav a:hover {
 }
 #profile p {
     position: relative;
-    top: -20px;
+    top: -17px;
 }
 
 
 
 #about .top {
     padding: 50px 20px 40px 20px;
-    background-color: #de7d29;
+    background: rgb(33, 33, 33);
     overflow: hidden;
 }
 #about {
@@ -103,6 +102,16 @@ nav a:hover {
 .top {
     text-align: center;
 }
+.top p { 
+    max-width: 80%;
+    margin: 0 auto;
+}
+span {
+    color: rgb(89,180,228);
+}
+
+
+
 .skillsimg {
     background-image: url('../images/logos.png');
     background-size: contain;
@@ -121,6 +130,7 @@ nav a:hover {
 }
 
 
+
 .projectscontainer {
     display: flex;
     justify-content: space-around;
@@ -130,8 +140,8 @@ nav a:hover {
 }
 #projects .top {
     margin: 0 auto;
-    padding: 70px 20px 70px 20px;
-    background-color: rgb(58, 144, 218);
+    padding: 40px 20px 70px 20px;
+    background: rgb(33, 33, 33);
 }
 .projectcontainer {
     padding: 10px;
@@ -142,18 +152,18 @@ nav a:hover {
 .projectcontainer:hover {
     transform: scale(1.05);
 }
-.projectcontainer:hover p{
-    opacity: 1;
-}
 .projectcontainer p {
     text-decoration: none;
     color: white;
     opacity: 1;
     font-size: 17px;
     width: 300px;
-    opacity: 0;
+    opacity: 1
     transition: 1s ease;
 }
+
+
+
 #javaracer {
     background-image: url('../images/java.png');
     background-size: cover;
@@ -162,10 +172,14 @@ nav a:hover {
     height: 300px;
     border: 2px solid white;
     opacity: .9;
+    border-radius: 4%;
 }
 #javaracer:hover {
     opacity: 1;
 }
+
+
+
 
 #InstantGrammer {
     background-image: url('../images/instant.png');
@@ -175,7 +189,12 @@ nav a:hover {
     height: 300px;
     border: 2px solid white;
     opacity: .9;
+    border-radius: 4%;
 }
+
+
+
+
 
 #contact {
     color: rgb(255, 255, 255);
@@ -224,8 +243,13 @@ nav a:hover {
     #prfimg {
         width: 200px;
     }
+    #profile p {
+        position: relative;
+        top: -17px;
+        font-size: 20px;
+    }
     #about .top {
-        padding-top: 10px;
+        padding-top: 14px;
     }
     .skillsimg {
         left: 0%;
@@ -246,9 +270,6 @@ nav a:hover {
         transform: none;
         color: white;
         border-bottom: 2px solid white;
-    }
-    .projectcontainer p {
-        opacity: 1;
     }
     .top {
         text-align: left;
