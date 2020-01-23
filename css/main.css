@@ -29,7 +29,7 @@ nav {
 }
 nav ul {
     position: relative;
-    left: -25px;
+    left: -20px;
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -41,14 +41,14 @@ nav a {
     margin: 12px;
     padding: 4px;
     text-decoration: none;
-    color: rgb(136, 136, 136);
+    color: rgb(216, 216, 216);
     transition: transform 1s;
     animation: fade-down 1.5s 1 ease-in-out;
 }
 nav a:hover {
-    transform: scale(1.2);
+    transform: scale(1.09);
     color: #de7d29;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
 }
 
 
@@ -69,7 +69,7 @@ nav a:hover {
 }
 #prfimg {
     align-self: center;
-    border: 5px solid white;
+    border: 2px solid white;
     border-radius: 100%;
     width: 18%;
     transition: 1s ease;
@@ -160,7 +160,7 @@ nav a:hover {
     background-repeat: no-repeat;
     width: 300px;
     height: 300px;
-    border: 5px solid white;
+    border: 2px solid white;
     opacity: .9;
 }
 #javaracer:hover {
@@ -173,7 +173,7 @@ nav a:hover {
     background-repeat: no-repeat;
     width: 300px;
     height: 300px;
-    border: 5px solid white;
+    border: 2px solid white;
     opacity: .9;
 }
 
