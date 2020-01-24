@@ -89,7 +89,7 @@ nav a:hover {
 
 
 #about .top {
-    padding: 50px 20px 40px 20px;
+    padding: 50px 20px 50px 20px;
     background: rgb(33, 33, 33);
     overflow: hidden;
 }
@@ -125,7 +125,7 @@ span {
     z-index: 1;
 }
 .skillsimg:hover {
-    transition: 1s ease;
+    transition: 2s ease;
     background-image: url('../images/logosHOVER.png');
 }
 
@@ -140,7 +140,7 @@ span {
 }
 #projects .top {
     margin: 0 auto;
-    padding: 40px 20px 70px 20px;
+    padding: 40px 20px 80px 20px;
     background: rgb(33, 33, 33);
 }
 .projectcontainer {
@@ -158,7 +158,7 @@ span {
     opacity: 1;
     font-size: 17px;
     width: 300px;
-    opacity: 1
+    opacity: 1;
     transition: 1s ease;
 }
 
@@ -197,7 +197,7 @@ span {
 
 
 #contact {
-    color: rgb(255, 255, 255);
+    color: rgb(187, 187, 187);
     margin: 0 auto;
     margin-top: 30px;
     padding: 50px 20px 50px 20px;
@@ -219,10 +219,15 @@ span {
     border-left: 2px solid white;
 }
 #contact a {
-    color: rgb(255, 255, 255);
+    transition: 1s;
+    color: rgb(89,180,228);
     display: inline-block;
     margin: 0px;
     text-decoration: none; 
+}
+#contact a:hover {
+    transition: 1s; 
+    transform: scale(1.1);
 }
 #contact a h4 {
     padding: 0px;
