@@ -135,7 +135,7 @@ span {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 900px;
+    max-width: 70%;
     margin: 0 auto;
 }
 #projects .top {
@@ -262,6 +262,9 @@ span {
         top: -17px;
         font-size: 20px;
     }
+    .projectscontainer {
+        max-width: 70%;
+    }
     #about .top {
         padding-top: 14px;
     }
@@ -306,7 +309,10 @@ span {
         padding-top: 6px;
     }
     main {
-        font-size: 110%:
+        font-size: 110%;
+    }
+    .projectscontainer {
+        max-width: 80%;
     }
 }
 
