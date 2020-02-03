@@ -95,7 +95,7 @@ nav a:hover {
 }
 #about {
     height: fit-content;
-    max-height: 700px;
+    max-height: 730px;
     overflow: hidden;
     z-index: 1;
 }
