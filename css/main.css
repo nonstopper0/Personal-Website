@@ -123,6 +123,7 @@ span {
     padding-top: 40%;
     margin: 0 auto;
     z-index: 1;
+    left: 1%;
 }
 .skillsimg:hover {
     transition: 2s ease;
@@ -269,7 +270,7 @@ span {
         padding-top: 14px;
     }
     .skillsimg {
-        left: 0%;
+        left: 10px;
     }
     nav {
         padding-top: 5px;
