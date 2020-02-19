@@ -165,8 +165,8 @@ span {
 
 
 
-#javaracer {
-    background-image: url('../images/java.png');
+#nomi {
+    background-image: url('../images/nomi.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 300px;
@@ -175,7 +175,7 @@ span {
     opacity: .9;
     border-radius: 4%;
 }
-#javaracer:hover {
+#nomi:hover {
     opacity: 1;
 }
 
