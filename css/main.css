@@ -2,6 +2,22 @@
     border: 1px solid red;
 } */
 
+/* Style all font awesome icons */
+.fa {
+    background-color: rgb(32, 32, 32);
+    padding: 15px;
+    font-size: 40px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -90,7 +106,7 @@ nav a:hover {
 
 #about .top {
     padding: 50px 20px 50px 20px;
-    background: rgb(33, 33, 33);
+    background: rgb(23, 23, 23);
     overflow: hidden;
 }
 #about {
@@ -142,7 +158,7 @@ span {
 #projects .top {
     margin: 0 auto;
     padding: 40px 20px 80px 20px;
-    background: rgb(33, 33, 33);
+    background: rgb(23, 23, 23);
 }
 .projectcontainer {
     padding: 10px;
@@ -212,41 +228,31 @@ span {
     margin-top: 30px;
     padding: 50px 20px 50px 20px;
     background-color: #151515;
-    height: 245px;
+    height: 300px;
 }
 #contactcontainer {
     margin: 0 auto;
-    justify-content: space-around;
+    font-size: 20px;
     max-width: 1000px;
     text-align: center;
     align-items: baseline;
 }
-#button {
-    margin: 0 auto;
-    width: fit-content;
-    padding: 0px 10px 0px 10px;
-    border-right: 2px solid white;
-    border-left: 2px solid white;
+#contact p {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(59, 59, 59);
 }
 #contact a {
     transition: 1s;
     color: rgb(89,180,228);
     display: inline-block;
-    margin: 0px;
+    margin: 10px;
     text-decoration: none; 
 }
 #contact a:hover {
     transition: 1s; 
     transform: scale(1.1);
-}
-#contact a h4 {
-    padding: 0px;
-    margin: 5px;
-    padding: 2px;
-    border-bottom: 1px solid white;
-}
-#hide {
-    margin-top: 30px;
 }
 
 @media(max-width: 500px) {
