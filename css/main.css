@@ -152,73 +152,66 @@ span {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
+    padding: 40px 0px 40px 0px
 }
 #projects .top {
     margin: 0 auto;
-    padding: 40px 20px 80px 20px;
+    padding: 40px 20px 90px 20px;
     background: rgb(23, 23, 23);
 }
-.projectcontainer {
-    padding: 10px;
-    padding-top: 60px;
-    text-align: center;
-    transition: .5s ease;
-}
-.projectcontainer:hover {
-    transform: scale(1.05);
-}
-.projectcontainer p {
-    text-decoration: none;
-    color: white;
-    opacity: 1;
-    font-size: 17px;
-    width: 300px;
-    opacity: 1;
-    transition: 1s ease;
+
+.card-title {
+    color: rgb(89,180,228)
 }
 
-
-
-#nomi {
-    background-image: url('../images/nomi.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
-    border: 2px solid white;
-    opacity: .9;
-    border-radius: 4%;
-}
-#nomi:hover {
-    opacity: 1;
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  margin: 20px;
+  perspective: 1000px; 
 }
 
-
-
-
-#InstantGrammer {
-    background-image: url('../images/instant.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
-    border: 2px solid white;
-    opacity: .9;
-    border-radius: 4%;
+.flip-card p{
+    font-size: 15px;
 }
 
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
 
-#fixify {
-    background-image: url('../images/fixify.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
-    border: 2px solid white;
-    opacity: .9;
-    border-radius: 4%;
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 5px 6px 5px rgb(15, 15, 15);
+  border-radius: 10%;
+  border: 2px solid white;
+  overflow: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  padding: 20px;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  transform: rotateY(180deg);
 }
 
 
