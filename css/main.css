@@ -150,9 +150,10 @@ span {
 
 .projectscontainer {
     display: flex;
+    flex-shrink: 0;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 80%;
+    max-width: 75%;
     margin: 0 auto;
     padding: 40px 0px 40px 0px
 }
@@ -170,7 +171,7 @@ span {
   background-color: transparent;
   width: 350px;
   height: 350px;
-  margin: 20px;
+  margin: 25px;
   perspective: 1000px; 
 }
 
@@ -197,7 +198,7 @@ span {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   box-shadow: 5px 6px 5px rgb(15, 15, 15);
-  border-radius: 10%;
+  border-radius: 16%;
   border: 2px solid white;
   overflow: hidden;
 }
@@ -208,7 +209,7 @@ span {
 }
 
 .flip-card-back {
-  padding: 20px;
+  padding: 24px;
   background-color: rgb(29, 29, 29);
   color: white;
   transform: rotateY(180deg);
@@ -263,7 +264,7 @@ span {
         font-size: 20px;
     }
     .projectscontainer {
-        max-width: 70%;
+        max-width: 95%;
     }
     #about .top {
         padding-top: 14px;
